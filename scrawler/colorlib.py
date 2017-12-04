@@ -1,5 +1,6 @@
 
 black = (0.0, 0.0, 0.0, 1.0)
+white = (1.0, 1.0, 1.0, 1.0)
 
 # def to_rgb(color):
 #     color = color.lstrip('#')

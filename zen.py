@@ -10,4 +10,5 @@ def simple_animation(term):
     yield from sc.simulcast(line1, sc.fade_in(line2, duration))
     yield from sc.simulcast(line1, line2, sc.fade_in(line3, duration))
 
-sc.run(simple_animation)
+if __name__ == '__main__':
+    sc.run(simple_animation)

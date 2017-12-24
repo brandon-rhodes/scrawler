@@ -23,10 +23,10 @@ def run(animation):
     finally:
         os.write(1, SHOW_CURSOR)
 
-def _run(animation):
+def _run(animation, Hz=60):
     width, height = get_terminal_size()
-    term = Term(60, width, height, width // 2, height // 2)
-    period = 1.0 / term.Hz
+    term = Term(Hz, width, height, width // 2, height // 2)
+    period = 1.0 / Hz
     t0 = time()
     for frame in animation(term):
         canvas = render(term, frame)

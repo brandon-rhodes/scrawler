@@ -13,7 +13,7 @@ setup(
     author='Brandon Rhodes',
     author_email='brandon@rhodesmill.org',
     url='https://github.com/brandon-rhodes/scrawler',
-    packages=['scrawler', 'adventure/tests'],
+    packages=['scrawler', 'scrawler/examples', 'scrawler/tests'],
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: Developers',
